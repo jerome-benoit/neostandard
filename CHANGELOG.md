@@ -1,5 +1,74 @@
 # Changelog
 
+## [0.12.0](https://github.com/jerome-benoit/neostandard/compare/v0.11.3...v0.12.0) (2024-08-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* export `typescript-eslint` instead of `@typescript-eslint/eslint-… ([#88](https://github.com/jerome-benoit/neostandard/issues/88))
+* add eslint-plugin-promise support ([#86](https://github.com/jerome-benoit/neostandard/issues/86))
+* reactivate stylistic rules for TypeScript ([#80](https://github.com/jerome-benoit/neostandard/issues/80))
+* adopt ignore findings from `fastify/fastify` ([#67](https://github.com/jerome-benoit/neostandard/issues/67))
+* remove built in ignores + fix ignores for ts ([#40](https://github.com/jerome-benoit/neostandard/issues/40))
+
+### 🌟 Features
+
+* add eslint-plugin-promise support ([#86](https://github.com/jerome-benoit/neostandard/issues/86)) ([8f141ae](https://github.com/jerome-benoit/neostandard/commit/8f141ae3d3c968092875f6a4f6bab41ffdbdbceb))
+* autodetect ESM at configuration migration ([#98](https://github.com/jerome-benoit/neostandard/issues/98)) ([d51787f](https://github.com/jerome-benoit/neostandard/commit/d51787fa40f9ca3e3d3e833876cd116260af3058))
+* **deps:** update dependency eslint-plugin-promise to ^7.1.0 ([#135](https://github.com/jerome-benoit/neostandard/issues/135)) ([34074ac](https://github.com/jerome-benoit/neostandard/commit/34074acd84a1ac593d446c7df0863454d279ceb9))
+* export plugins for others to use ([26b472b](https://github.com/jerome-benoit/neostandard/commit/26b472b52b32d704f60f12bfb228692f2f74b2f6))
+* partly disable `@stylistic/comma-dangle` ([#139](https://github.com/jerome-benoit/neostandard/issues/139)) ([09339ec](https://github.com/jerome-benoit/neostandard/commit/09339ec61529d47f8e9da3f5d993d67ea6cdf679))
+* port jsx support from `standard` ([#118](https://github.com/jerome-benoit/neostandard/issues/118)) ([f1c24a2](https://github.com/jerome-benoit/neostandard/commit/f1c24a2c5b80036e8c5506642994b224e62242d1))
+* reactivate stylistic rules for TypeScript ([#80](https://github.com/jerome-benoit/neostandard/issues/80)) ([e2b0daa](https://github.com/jerome-benoit/neostandard/commit/e2b0daabc6e29f82fac957233eac83ecff9326c3))
+
+
+### 🩹 Fixes
+
+* add `--no-default-ignore` to CLI ([6443327](https://github.com/jerome-benoit/neostandard/commit/64433273ce8c292a4337b2c2422f6c1dd078c07b))
+* adopt ignore findings from `fastify/fastify` ([#67](https://github.com/jerome-benoit/neostandard/issues/67)) ([7ef49ce](https://github.com/jerome-benoit/neostandard/commit/7ef49ce98b5efc86aa8397d17e7350d5d5daaf43))
+* **deps:** add `eslint-plugin-react` to eslint deps handling ([#127](https://github.com/jerome-benoit/neostandard/issues/127)) ([3f65825](https://github.com/jerome-benoit/neostandard/commit/3f65825582520709ac2900d17049340b5d9256a2))
+* **deps:** move all dependencies to `@types/eslint@^9` ([#116](https://github.com/jerome-benoit/neostandard/issues/116)) ([7047941](https://github.com/jerome-benoit/neostandard/commit/70479410ab9b03bb23195fcb7222102ddf9d3368))
+* **deps:** update dependencies ([#125](https://github.com/jerome-benoit/neostandard/issues/125)) ([a678003](https://github.com/jerome-benoit/neostandard/commit/a678003cfb85a20db13e4a9b3fceab0fead90d14))
+* **deps:** update dependency @stylistic/eslint-plugin to ^2.6.0 ([#123](https://github.com/jerome-benoit/neostandard/issues/123)) ([366bf51](https://github.com/jerome-benoit/neostandard/commit/366bf51b09fce95566f444b28b9d5b983e093473))
+* **deps:** update dependency @stylistic/eslint-plugin to ^2.6.2 ([#133](https://github.com/jerome-benoit/neostandard/issues/133)) ([f53dd67](https://github.com/jerome-benoit/neostandard/commit/f53dd67e10bf4b7ccd82628639724ae5fb7ada49))
+* **deps:** update dependency @stylistic/eslint-plugin to ^2.6.3 ([#137](https://github.com/jerome-benoit/neostandard/issues/137)) ([afe1387](https://github.com/jerome-benoit/neostandard/commit/afe1387846c973de6ba0e5be60e0286a08133e24))
+* **deps:** update dependency @stylistic/eslint-plugin-js to ^2.2.2 ([#73](https://github.com/jerome-benoit/neostandard/issues/73)) ([6086d51](https://github.com/jerome-benoit/neostandard/commit/6086d512d6dc2bca121c36e91f5c7d27d4cf6c01))
+* **deps:** update dependency eslint-plugin-n to ^17.10.2 ([#134](https://github.com/jerome-benoit/neostandard/issues/134)) ([e23e413](https://github.com/jerome-benoit/neostandard/commit/e23e413cb1e553c8789b8fffc93d43deaf290a40))
+* **deps:** update dependency eslint-plugin-n to ^17.8.1 ([#58](https://github.com/jerome-benoit/neostandard/issues/58)) ([050d894](https://github.com/jerome-benoit/neostandard/commit/050d894d3f3fc5f62c07723dbce56bf5a781d887))
+* **deps:** update dependency eslint-plugin-n to ^17.9.0 ([#74](https://github.com/jerome-benoit/neostandard/issues/74)) ([4bc272e](https://github.com/jerome-benoit/neostandard/commit/4bc272eb971dd771aacc0bc01ce5f7a8617b2a50))
+* **deps:** update dependency globals to ^15.4.0 ([#59](https://github.com/jerome-benoit/neostandard/issues/59)) ([9af005d](https://github.com/jerome-benoit/neostandard/commit/9af005df8e299ecc9274d8dce18156032a2a84e4))
+* **deps:** update dependency globals to ^15.6.0 ([#75](https://github.com/jerome-benoit/neostandard/issues/75)) ([9ed8b21](https://github.com/jerome-benoit/neostandard/commit/9ed8b21f80ed2e43fd4b7358ff89833fe8ae5509))
+* **deps:** update dependency globals to ^15.7.0 ([#99](https://github.com/jerome-benoit/neostandard/issues/99)) ([a5df311](https://github.com/jerome-benoit/neostandard/commit/a5df311755401744c85f8ca968bb7856bc46b7a3))
+* **deps:** update dependency globals to ^15.8.0 ([#104](https://github.com/jerome-benoit/neostandard/issues/104)) ([7b21e44](https://github.com/jerome-benoit/neostandard/commit/7b21e445e4dcde53cab6d32ffd50bedde92a38b0))
+* **deps:** update dependency peowly to ^1.3.1 ([#72](https://github.com/jerome-benoit/neostandard/issues/72)) ([d71eb65](https://github.com/jerome-benoit/neostandard/commit/d71eb652a48e1493db77e4cbd87d029e3be36511))
+* **deps:** update dependency peowly to ^1.3.2 ([#100](https://github.com/jerome-benoit/neostandard/issues/100)) ([aa85713](https://github.com/jerome-benoit/neostandard/commit/aa857131d4ee9198246050b6e719bd691f19ba07))
+* **deps:** update dependency typescript-eslint to ^8.0.0-alpha.41 ([#82](https://github.com/jerome-benoit/neostandard/issues/82)) ([b6bac9c](https://github.com/jerome-benoit/neostandard/commit/b6bac9c034b3ba22054f10f9dd3d5c6d2a2f11e1))
+* **deps:** update typescript-eslint monorepo to ^8.0.0-alpha.28 ([#56](https://github.com/jerome-benoit/neostandard/issues/56)) ([ffce1c5](https://github.com/jerome-benoit/neostandard/commit/ffce1c5ff96c8b0784d15ef1852c57361af6a51a))
+* **deps:** update typescript-eslint monorepo to ^8.0.0-alpha.30 ([#61](https://github.com/jerome-benoit/neostandard/issues/61)) ([8856d07](https://github.com/jerome-benoit/neostandard/commit/8856d074ec1145bc8d19ce65627fe7ee69c3d969))
+* export `typescript-eslint` instead of `@typescript-eslint/eslint-… ([#88](https://github.com/jerome-benoit/neostandard/issues/88)) ([9502724](https://github.com/jerome-benoit/neostandard/commit/95027247e9975b54f694aae5e16f529eca912219))
+* lazy load typescript and style options ([#126](https://github.com/jerome-benoit/neostandard/issues/126)) ([78d9ff8](https://github.com/jerome-benoit/neostandard/commit/78d9ff878c2fc214d6b308b68dec0a015b89155b)), closes [#124](https://github.com/jerome-benoit/neostandard/issues/124)
+* make config names conform to name convention ([#64](https://github.com/jerome-benoit/neostandard/issues/64)) ([2077be0](https://github.com/jerome-benoit/neostandard/commit/2077be04b56d3d8d425b166187e99249469fd5de))
+* peer errors by removing stylistic-ts ([#36](https://github.com/jerome-benoit/neostandard/issues/36)) ([8805546](https://github.com/jerome-benoit/neostandard/commit/8805546e678035c97906da98544ead37e8dfee57)), closes [#35](https://github.com/jerome-benoit/neostandard/issues/35)
+* remove built in ignores + fix ignores for ts ([#40](https://github.com/jerome-benoit/neostandard/issues/40)) ([86ac8ea](https://github.com/jerome-benoit/neostandard/commit/86ac8ea53263958cdd0744ff7032ce6638e6c7d4))
+
+
+### 📚 Documentation
+
+* add `noDefaultIgnore` to readme ([d63916e](https://github.com/jerome-benoit/neostandard/commit/d63916e695a0600ead47d0dbe008c2b7b3d51cda))
+* add a `Used by` section to the README ([#148](https://github.com/jerome-benoit/neostandard/issues/148)) ([3b17f4f](https://github.com/jerome-benoit/neostandard/commit/3b17f4f187bfc4115a3dc3e9cbcc8e6748ad0a4c))
+* add mission statement + notes on extending ([#94](https://github.com/jerome-benoit/neostandard/issues/94)) ([7835e15](https://github.com/jerome-benoit/neostandard/commit/7835e1578f847ba3f04557ab17b103be3e7b8537))
+* add names to the configs ([9841180](https://github.com/jerome-benoit/neostandard/commit/9841180d0711cb1824f391c3f502436c47166658))
+* fix config inspector publish ([9417a88](https://github.com/jerome-benoit/neostandard/commit/9417a886e3b2ca0c224debbe9bface1b1f163941))
+* improve list of differences ([#102](https://github.com/jerome-benoit/neostandard/issues/102)) ([ca82086](https://github.com/jerome-benoit/neostandard/commit/ca82086b73de1fd9d1bba6c1c088232db5908635))
+
+
+### 🧹 Chores
+
+* **cli:** use console log level ([#136](https://github.com/jerome-benoit/neostandard/issues/136)) ([bb370d2](https://github.com/jerome-benoit/neostandard/commit/bb370d2cec486eecd0f6057621b95628507eff5d))
+* fix an accidental gitignore ([4651eda](https://github.com/jerome-benoit/neostandard/commit/4651edaea24aa24068c2145c597b8fe39ea66c4b))
+* remove direct dependency on @typescript-eslint/utils ([#93](https://github.com/jerome-benoit/neostandard/issues/93)) ([f224088](https://github.com/jerome-benoit/neostandard/commit/f224088d5c16f094e09e8e3d7f1d93f0f49e3da8))
+* validate strict peer dependency installation ([#37](https://github.com/jerome-benoit/neostandard/issues/37)) ([277f17f](https://github.com/jerome-benoit/neostandard/commit/277f17f455efe754b6c2a70930d0e35238495d87))
+
 ## [0.11.3](https://github.com/neostandard/neostandard/compare/v0.11.2...v0.11.3) (2024-08-20)
 
 
